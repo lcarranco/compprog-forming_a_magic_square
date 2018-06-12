@@ -51,7 +51,7 @@
 * Each of the lines contains three space-separated integers of row _s_[_i_]
 
 ## Constraints
-* **_s_[_i_][_j_]** \in **[1, 9]**
+* **_s_<sub>i,j</sub>** &isin; **[1, 9]**
 
 ## Output Format
 * Print an integer denoting the minimum cost of turning matrix _s_ into a magic square
@@ -71,7 +71,7 @@
 ```
 
 ### Explanation 0
-* If we change the bottom right value, **_s_[2][2]**, from 5 to 6 at a cost of | 6 - 5 | = **1**, _s_ becomes a magic square at the minimum possible cost
+* If we change the bottom right value, **_s_<sub>2,2</sub>**, from 5 to 6 at a cost of | 6 - 5 | = **1**, _s_ becomes a magic square at the minimum possible cost
 
 ### Sample Input 1
 ```
@@ -87,9 +87,9 @@
 
 ### Explanation 1
 Using 0-based indexing, if we make
-* **_s_[0][1]** -> 9 at a cost of | 9 - 8 | = **1**
-* **_s_[1][0]** -> 3 at a cost of | 3 - 4 | = **1**
-* **_s_[2][0]** -> 8 at a cost of | 8 - 6 | = **2**
+* **_s_<sub>0,1</sub>** -> 9 at a cost of | 9 - 8 | = **1**
+* **_s_<sub>1,0</sub>** -> 3 at a cost of | 3 - 4 | = **1**
+* **_s_<sub>2,0</sub>** -> 8 at a cost of | 8 - 6 | = **2**
 
 then the total cost will be 1 + 1 + 2 = **4**
 
